@@ -9,8 +9,9 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /app
 
 # Install system dependencies
-RUN apt-get update \
-    && apt-get install -y netcat
+RUN apt-get update
+RUN apt-get install -y netcat
+
 
 # Copy the requirements file
 COPY ./requirements.txt /app/requirements.txt
