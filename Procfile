@@ -1,1 +1,1 @@
-web gunicorn RwandaBasketballAPI.wsgi:application --log-file -
+web: gunicorn RwandaBasketballAPI.wsgi:application --log-file -
